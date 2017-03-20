@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <base href="/">
+        <meta name="viewport"
+               content="width=device-width,
+                        initial-scale=1">
+        <meta charset="utf-8">
+    </head>
+    <body ng-app="DevboyAdventures"
+          layout="column">
+        
+        <md-toolbar class="header"
+                    md-whiteframe="1">
+            <div class="md-toolbar-tools">
+                
+                <a ui-sref="home"
+                   ui-sref-active="active"
+                   layout="row">
+                    
+                    <div class="head1">
+                        DEVBOY
+                    </div>
+
+                    <div class="head2">
+                        ADVENTURES
+                    </div>
+                </a>
+                
+                <span flex></span>
+                
+                <a ui-sref="home"
+                   ui-sref-active="active"
+                   class="md-subheader nav"
+                   style="text-decoration: none">HOME</a>
+
+                <a ui-sref="about"
+                   ui-sref-active="active"
+                   class="md-subheader nav"
+                   style="text-decoration: none">ABOUT</a>
+                
+                <a ui-sref="adventure"
+                   ui-sref-active="active"
+                   class="md-subheader nav"
+                   style="text-decoration: none">ADVENTURE</a>
+            </div>
+        </md-toolbar>
+        
+        <md-content>
+            
+            <ui-view style="width: 900px;"></ui-view>
+            
+            <div ng-include="'views/footer.html'">
+            </div>
+            
+        </md-content>
+        
+    </body>
+    
+    <link rel="import"
+           href="dependency/dependency.html">
+</html>

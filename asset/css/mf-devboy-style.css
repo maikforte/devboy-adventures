@@ -1,0 +1,33 @@
+.active {
+    color: "red"
+}
+
+md-toolbar.header{
+    background-color: rgba(0,0,0,0) !important;
+}
+
+div.head1 {
+    font-weight: 700 !important;
+    padding-right: 10px;
+    color: #555555;
+}
+
+div.head2 {
+    font-weight: normal !important;
+    color: darkgrey;
+}
+
+a.nav {
+    margin-right: 20px;
+    background: rgba(0,0,0,0);
+    color: darkgrey;
+}
+
+a.active {
+    color: #555555;
+    font-weight: 700 !important;
+}
+
+div.footer {
+    height: 150px;
+}

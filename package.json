@@ -19,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/maikforte/devboy-adventures/issues"
   },
-  "homepage": "https://github.com/maikforte/devboy-adventures#readme"
+  "homepage": "https://github.com/maikforte/devboy-adventures#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.3.5",
+    "angular-aria": "^1.3.5",
+    "angular-material": "^1.1.0",
+    "angular-messages": "^1.3.5",
+    "angular-ui-router": "^0.4.2",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  }
 }
