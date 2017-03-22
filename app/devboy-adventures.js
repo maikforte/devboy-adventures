@@ -1,6 +1,10 @@
 angular.module("DevboyAdventures" , [
-    "ngMaterial",
-    "ui.router"
+    "ui.router",
+//    "ngAnimate",
+//    "ngAria",
+//    "ngMessages",
+//    "ngSanitize",
+    "ngMaterial"
 ])
 
 .config(function($mdThemingProvider){
@@ -37,9 +41,16 @@ angular.module("DevboyAdventures" , [
         "templateUrl" : "views/contact.html"
     };
     
+    var toolsState = {
+        "name" : "tools",
+        "url" : "/tools",
+        "templateUrl" : "views/tools.html"
+    };
+    
     $urlRouterProvider.otherwise("/home");
     $stateProvider.state(homeState);
     $stateProvider.state(aboutState);
     $stateProvider.state(adventureState);
     $stateProvider.state(contactState);
+    $stateProvider.state(toolsState);
 });
