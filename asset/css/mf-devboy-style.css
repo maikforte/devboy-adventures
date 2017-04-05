@@ -2,8 +2,16 @@
     color: "red"
 }
 
-md-toolbar.header{
-    background-color: rgba(0,0,0,0) !important;
+h1.dev {
+    color: #555555;
+}
+
+h1.boy {
+    color: #BBBBBB;
+}
+
+md-toolbar.header {
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 
 div.head1 {
@@ -19,7 +27,7 @@ div.head2 {
 
 a.nav {
     margin-right: 20px;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     color: darkgrey;
 }
 
@@ -29,15 +37,13 @@ a.active {
 }
 
 div.footer {
-    height: 150px;
-    margin-bottom: 0px;
+    height: 155px;
+    position: relative;
+    top: 0;
 }
 
 div.banner {
     height: 450px;
-}
-
-div.img-banner {
 }
 
 div.rounded-button {

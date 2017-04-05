@@ -1,4 +1,3 @@
 angular.module("DevboyAdventures")
 
-.controller("DevboyAdventuresController", function($scope) {
-});
+    .controller("DevboyAdventuresController", function ($scope) {});

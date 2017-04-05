@@ -1,1 +1,21 @@
-Adventure
+<div style="height: 500px;" layout="row" layout-align="center center" ng-show="isLoading" layout-padding>
+    <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+</div>
+
+<div ng-hide="isLoading" layout-padding>
+
+    <md-grid-list md-cols="4" md-row-height="1:1" md-gutter="10px">
+
+        <md-grid-tile ng-repeat="comic in comicList" style="background-image: url({{'https://s3-ap-southeast-1.amazonaws.com/devboy-adventures/' + comic.Key}});
+                             background-origin: border-box;
+                             background-size: 100% auto;
+                             background-color: rgba(200,200,200,.6)" md-whiteframe="1" md-rowspan="{{comic.size}}" md-colspan="{{comic.size}}" ng-click="previewComics($event, comic)">
+            <md-grid-tile-footer layout="row" layout-align="center center" style="background: rgba(0,0,0,.8)">
+                <h1 class="md-subheader" style="background: rgba(0,0,0,0);
+                           color: #DDDDDD;">{{comic.Key | uppercase}}</h1>
+            </md-grid-tile-footer>
+        </md-grid-tile>
+
+    </md-grid-list>
+
+</div>

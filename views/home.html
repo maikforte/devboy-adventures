@@ -1,22 +1,16 @@
-<div class="banner"
-     layout="row">
-    
+<div class="banner" layout="row">
+
     <div flex="65">
-        <img ng-src="public/asset/img/devboy-banner.png"
-             height="450"
-             style="margin-left: auto;
+        <img ng-src="public/asset/img/devboy-banner.png" height="450" style="margin-left: auto;
                     margin-right: auto;">
     </div>
-    
-    <div flex="35"
-         layout="column"
-         layout-align="center center">
+
+    <div flex="35" layout="column" layout-align="center center">
         <h1 style="font-weight: 700;
                    color: #555555">
             I'M ON AN ADVENTURE
         </h1>
-        <div class="rounded-button"
-             ng-click="null">
+        <div class="rounded-button" ng-click="null" ui-sref="adventure" ui-sref-active="active">
             JOIN ME
         </div>
     </div>
