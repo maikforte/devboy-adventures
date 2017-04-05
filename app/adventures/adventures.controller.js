@@ -39,8 +39,10 @@ angular.module("AdventuresModule")
     $scope.init();
 })
 
-.controller("DialogController", function($scope, AdventuresService) {
+.controller("DialogController", function($scope, AdventuresService, $mdDialog) {
     $scope.selectedComic = AdventuresService.selectedComic;
-    console.log($scope.selectedComic);
-    $scope.message = "TEST";
+    
+    $scope.close = function() {
+        $mdDialog.cancel();  
+    };
 });
